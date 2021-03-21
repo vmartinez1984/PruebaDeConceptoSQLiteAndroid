@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prueba de concepto de registro de usuarios"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGoActivityAddUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="buttonGoActivityAddUser_onClick"
+        android:text="Registrar usuario" />
+
+    <Button
+        android:id="@+id/buttonGoActivityGetUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="buttonGoActivityGetUser_onClick"
+        android:text="Consultar usuario" />
+
+    <Button
+        android:id="@+id/buttonGoActivityGetUserBySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="buttonGoActivityGetUserBySpinner_onClick"
+        android:text="Consulta lista de usuario usando spinner" />
+
+    <Button
+        android:id="@+id/buttonGoActivityGetUserByListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="buttonGoActivityGetUserByListView_onClick"
+        android:text="Consultar lista usuario usando listview" />
+
+</LinearLayout>
